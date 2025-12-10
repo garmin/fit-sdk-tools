@@ -7,8 +7,8 @@ The FIT SDK documentation is available at https://developer.garmin.com/fit
 Share your knowledge, ask questions, and get the latest FIT SDK news in the [FIT SDK Developer Forum](https://forums.garmin.com/developer/)
 
 ## Contents
-* Profile.xlsx - Microsoft Excel spreadsheet containing the latest FIT SDK Profile. Includes all messages and types.
-* FitCSVTool.jar - Java command line tool used to convert binary FIT files to readable text files and vice-versa.
+* Profile.xlsx - Spreadsheet containing the latest FIT SDK Profile. Includes all messages and types.
+* FitCSVTool.jar - Java command line tool used to convert binary FIT files to readable text files and text files back to binary FIT files.
 * ActivityRepairTool.jar - Java command line tool that repairs FIT files up to the point of corruption or error.
 * Example FIT files and their decoded CSVs.
 
