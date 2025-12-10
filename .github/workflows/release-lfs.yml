@@ -1,0 +1,47 @@
+name: Release LFS
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  upload-lfs-asset:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: "true"
+
+      - name: Pull LFS files
+        run: git lfs pull
+
+      - name: Upload FitCSVTool LFS file to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./FitCSVTool/FitCSVTool.jar
+          asset_name: FitCSVTool.jar
+          asset_content_type: application/octet-stream
+
+      - name: Upload ActivityRepairTool LFS file to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./ActivityRepairTool/ActivityRepairTool.jar
+          asset_name: ActivityRepairTool.jar
+          asset_content_type: application/octet-stream
+
+      - name: Upload Profile.xlsx LFS file to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./Profile.xlsx
+          asset_name: Profile.xlsx
+          asset_content_type: application/octet-stream
