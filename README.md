@@ -9,7 +9,7 @@ The FIT SDK documentation is available at https://developer.garmin.com/fit
 Share your knowledge, ask questions, and get the latest FIT SDK news in the [FIT SDK Developer Forum](https://forums.garmin.com/developer/)
 
 ## Requirements
-[Git LFS](https://git-lfs.com/) should be installed and configured before cloning the repository in order to pull files from LFS.
+[Git LFS](https://git-lfs.com/) This repository uses Git LFS to manage large binary files. It is recommended to have Git LFS installed and configured before cloning.
 
 ## Contents
 * Profile.xlsx - Spreadsheet containing the latest FIT SDK Profile. Includes all messages and types.
