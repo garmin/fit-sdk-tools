@@ -1,10 +1,15 @@
 # FIT SDK Tools
 
+The latest SDK Tools and Profile can be downloaded from the [latest release](https://github.com/garmin/fit-sdk-tools/releases/latest).
+
 ## FIT SDK Documentation
 The FIT SDK documentation is available at https://developer.garmin.com/fit
 
 ## FIT SDK Developer Forum
 Share your knowledge, ask questions, and get the latest FIT SDK news in the [FIT SDK Developer Forum](https://forums.garmin.com/developer/)
+
+## Requirements
+[Git LFS](https://git-lfs.com/) should be installed and configured before cloning the repository in order to pull files from LFS.
 
 ## Contents
 * Profile.xlsx - Spreadsheet containing the latest FIT SDK Profile. Includes all messages and types.
